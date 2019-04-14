@@ -1,5 +1,9 @@
 eval (python3 -m virtualfish auto_activation)
-set -g theme_nerd_fonts yes
+
+if status is-interactive
+and not set -q TMUX
+  exec tmux new-session -A -s main
+end
 
 alias gb="git branch"
 alias gd="git diff"
