@@ -49,3 +49,35 @@ sudo apt install cmake
 
 ./install
 
+
+# osx - roughly
+
+install brew
+
+brew install python
+
+symlink python3 to python
+
+brew install fish
+
+brew install awscli
+ 
+cd ~
+
+git clone https://github.com/martinpwrs/dotfiles/
+
+cp dotfiles/.vimrc .
+
+cp dotfiles/.tmux_conf .
+
+cp dotfiles/.config/fish/fish.config .config/fish/fish.config
+
+install xcode from the site
+
+brew install macvin
+
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+cd ~/.vim/bundle/YouCompleteMe/
+
+sudo apt install cmake
